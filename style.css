@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(14, 22, 22);
+}
+header{
+    background: linear-gradient(35deg, #272222 40%, #2c2c2c 20%,#1f1d1d 40%);
+}
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+header div h1{
+    font-size: 2rem;
+    color: whitesmoke;
+}
+main div{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weight{
+    width: 20vw;
+    color: grey;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: 1px solid white;
+}
+
+.weight:focus{
+    outline: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+.red{
+    background-color: #dc3545;
+}
+.green{
+    background-color: #28a745;
+}
+.blue{
+    background-color: #007bff;
+}
+.red,.green,.blue{
+    width: 20vw;
+    border-radius: 1rem;
+    /* padding: 0.1rem; */
+    /* margin-top: 10px; */
+    color: white;
+    font-size: 1rem;
+    height: 70px;
+    /* align-items: flex-start; */
+}
+.colors{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.inside{
+    text-align: left;
+}
+@media only screen and (max-width:500px){
+    .weight{
+        width: 40vw;
+        font-size: 10px;
+    }
+    .red,.green,.blue{
+        font-size: 10px;
+        width: 33vw;
+        height: 8vh;
+    }
+    .colors{
+        margin-top: -50px;
+    }
+}
